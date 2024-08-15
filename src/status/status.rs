@@ -13,7 +13,7 @@ impl Status {
         let status = Self::create_status(&config)?;
         let icons = SelectedIcons::new(&status,Icons::new(config).map_err(CliError::Io)?);
         let format = format!(
-            "{} {} {} {} {} {} {} {}",
+            "{} {}% {} {}% {} {} {} {}",
             icons.battery,
             status.battery,
             icons.volume,
