@@ -43,18 +43,18 @@ date_format = "%Y-%m-%d"
 time_format = "%H:%M:%S"
 
 [icons]
-date = ""
-time = ""
+date = "\uf073 "
+time = "\uf017 "
 
 [icons.battery]
-battery_full = " "
-battery_middle = " "
-battery_quarter = " "
+battery_full = "\uf240 "
+battery_middle = "\uf242 "
+battery_quarter = "\uf243 "
 
 [icons.volume]
-volume_high = " "
-volume_low = ""
-volume_mute = "󰝟"
+volume_high = "\uf028 "
+volume_low = "\uf027 "
+volume_mute = "\uf6a9 "
 ```
 ## Move the binary
 To have the binary `lmstatus` execute at system startup, you need to move it to the path: `/usr/bin` or `/usr/local/bin` wherever you prefer.
