@@ -6,9 +6,8 @@
 
 #### Content
 
-- [**lmstatus**](#lmstatus)
-      - [Content](#content)
-    - [Clone](#clone)
+- [Content](#content)
+  - [Clone](#clone)
   - [Compilation](#compilation)
   - [Config File](#config-file)
     - [Example of config file:](#example-of-config-file)
