@@ -1,7 +1,5 @@
-use serde::Deserialize;
-
+use crate::prelude::*;
 use super::formats::Formats;
-use crate::Icons;
 
 #[derive(Deserialize)]
 pub struct Config {
