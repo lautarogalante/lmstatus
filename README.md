@@ -1,6 +1,9 @@
 # **lmstatus**
 **lmstatus** is a simple status monitor written in Rust for **dwm window manager**.
 
+![2024-08-15_12-40](https://github.com/user-attachments/assets/82014010-57dd-4402-a81f-6cb0e0dfb8e9)
+
+
 #### Content
 
 - [**lmstatus**](#lmstatus)
