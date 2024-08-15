@@ -1,12 +1,5 @@
-use crate::get_current_volume;
-use crate::get_battery_status;
-use crate::Icons;
-use crate::get_time;
-use crate::get_date;
-use crate::icons::selected_icons::SelectedIcons;
-use crate::CliError;
-use crate::config::config::Config;
-
+use crate::prelude::*;
+use crate::prelude::utils::*;
 
 pub struct Status {
     pub(crate) date: String,
@@ -33,7 +26,7 @@ impl Status {
         Ok(format)
     }
 
-    fn create_status(config: &Config) -> Result<Self, CliError> {
+    pub fn create_status(config: &Config) -> Result<Self, CliError> {
         let date_format = &config.format.date_format;
         let time_format = &config.format.time_format;
         let date = get_date(date_format.to_string());
