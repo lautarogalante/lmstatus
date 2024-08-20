@@ -1,16 +1,5 @@
 use crate::prelude::*;
 
-const CONFIG_DIR: &str = ".config/lmstatus";
-const CONFIG_FILE: &str = "Config.toml";
-
-pub fn load_config() -> Result<Config, CliError> {
-    let home_dir = env::var("HOME").expect("environment variable $HOME not found.");
-    let config_path = Path::new(&home_dir).join(CONFIG_DIR).join(CONFIG_FILE);
-    let read_path = fs::read_to_string(config_path)?;
-    let config: Config = toml::from_str(&read_path).expect("Error in Deserialization.");
-    Ok(config)
-}
-
 pub fn get_date(format: String) -> String {
     let date_format = format;
     Local::now().format(&date_format).to_string()

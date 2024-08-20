@@ -5,7 +5,7 @@ use super::battery_icons::BatteryIcons;
 use super::volume_icons::VolumeIcons;
 use crate::config::config::Config;
 
-#[derive(Deserialize)]
+#[derive(Deserialize, Default, Debug)]
 pub struct Icons {
     pub date: String,
     pub time: String,
@@ -30,6 +30,7 @@ impl Icons {
             battery: battery_icons,
             volume: volume_icons,
         };
+        //println!("Upload: {:?}", config);
         Ok(icons)
     }
 }

@@ -1,6 +1,7 @@
 use crate::prelude::*;
 use crate::prelude::utils::*;
 
+#[derive(Debug, Default)]
 pub struct Status {
     pub(crate) date: String,
     pub(crate) time: String,
